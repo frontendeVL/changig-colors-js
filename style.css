@@ -12,11 +12,11 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #fa7ada;
+  background: #f3efa6;
 }
 
 .wrapper{
-  background:#fff;
+  background:#f7f3eb;
   width: 450px;
   padding: 25px;
   border-radius: 7px;
@@ -25,7 +25,7 @@ body{
 .wrapper .gradient-box{
   width: 100%;
   height: 220px;
-  background: linear-gradient(to left top, #fa7ada, #f67676);
+  background: linear-gradient(to left top, #f1fa7a, #f67676);
   border-radius: 7px;
 }
 
@@ -43,13 +43,96 @@ body{
 .options .select-box{
   border-radius: 5px;
   padding: 10px 15px;
-  border: 1px solid #aaa;
+  border: 1px solid #f0e2e2;
 }
 
 .select-box select{
   width: 100%;
+  height: 35px;
   border: none;
   outline: none;
   background: none;
+  font-size: 1.12rem;
 }
 
+.colors input{
+  height: 40px;
+  width: 60px;
+  justify-content: space-between;
+}
+
+.row-options{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper textarea{
+  width: 100%;
+  padding: 10px 15px;
+  color: #333;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: none;
+}
+
+.buttons button{
+  padding: 10px 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttons .refresh {
+  position: relative; 
+  overflow: hidden;  
+  z-index: 1;         
+  background: #f8fae0;
+  width: 150px;
+}
+
+.buttons .refresh::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 360px;
+  background: #f1fa7a;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.buttons .refresh:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.buttons .copy {
+  position: relative; 
+  overflow: hidden;  
+  z-index: 1;         
+  background: #ffecec;
+  width: 150px;
+}
+
+.buttons .copy::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 360px;
+  background: #f67676;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.buttons .copy:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
