@@ -25,7 +25,7 @@ body{
 .wrapper .gradient-box{
   width: 100%;
   height: 220px;
-  background: linear-gradient(to left top, #f1fa7a, #f67676);
+  background: linear-gradient(to top, #f1fa7a, #f67676);
   border-radius: 7px;
 }
 
